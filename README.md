@@ -9,22 +9,25 @@ The application is deployed using the following platforms:
 - Client: Netlify
   - [Link to Client Deployment](https://moveotasklielcaspi.netlify.app/)
 
-Link to Client Deployment
-Features
-Lobby Page
-The lobby page doesn't require authentication.
-It displays a title "Choose Code Block" and a list of at least 4 code block items.
-Each item represents a code block with a unique title (e.g., "Async Case").
+## Features
+### Lobby Page
+Shows a list of 4 code block items: "Async Case", "Promise Example", "Event Handling" and "Callback Function".
 Clicking on an item takes the user to the corresponding code block page.
-Code Block Page
-Both mentor and student users enter this page.
-The first user to open the code block page is considered the mentor; subsequent users are students.
-The mentor sees the chosen code block in read-only mode.
-Students can view and modify the code block in real-time.
-Code changes are synchronized using Socket.io for real-time collaboration.
-Syntax highlighting is implemented using Highlight.js, supporting JavaScript code only.
-Code Block Data Structure
-Code blocks are created manually, and no external API or UI is used.
-Each code block has the following fields:
-title: The title of the code block.
-code: A string representing JavaScript code.
+
+## Use Case: Async Case
+In this use case, both the mentor and the student will explore an example code block titled "Async Case." The mentor will view the highlighted code, while the student will interact with a textarea to modify the provided solution.
+
+### Code Block Details
+- Title: Async Case
+- Code:
+javascript
+Copy code
+const fetchData = async () => {
+  console.log("Fetching data...");
+
+}
+### Mentor's View
+The mentor, having chosen the "Async Case," will enter the code block page and see the provided code in read-only mode. Syntax highlighting will be applied for a better understanding.
+
+### Student's View
+The student, selecting the "Async Case," will enter the code block page and find a textarea pre-populated with the provided solution. The student has the ability to modify the code in real-time, and any changes will be immediately visible to both the student and the mentor, fostering an interactive learning experience.
