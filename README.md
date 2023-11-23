@@ -1,13 +1,13 @@
 # Mentor-Student Coding Collaboration
 Welcome to the Mentor-Student Coding Collaboration application! This web application allows a mentor (Tom) and a student (Josh) to collaborate in real-time on JavaScript code. The mentor can share code blocks, observe the student's changes in real-time, and provide guidance.
 
-Deployment
+## Deployment
 The application is deployed using the following platforms:
 
-Server: Render
-
-Link to Server Deployment
-Client: Netlify
+- Server: Render
+  - [Link to Server Deployment](<your-render-server-url>)
+- Client: Netlify
+  - [Link to Client Deployment](https://moveotasklielcaspi.netlify.app/)
 
 Link to Client Deployment
 Features
