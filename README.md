@@ -1,4 +1,4 @@
-Mentor-Student Coding Collaboration
+# Mentor-Student Coding Collaboration
 Welcome to the Mentor-Student Coding Collaboration application! This web application allows a mentor (Tom) and a student (Josh) to collaborate in real-time on JavaScript code. The mentor can share code blocks, observe the student's changes in real-time, and provide guidance.
 
 Deployment
