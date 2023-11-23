@@ -6,6 +6,7 @@ The application is deployed using the following platforms:
 
 - Server: Render
 - Client: Netlify
+  
 [Link to app Deployment](https://moveotasklielcaspi.netlify.app/)
 
 ## Features
