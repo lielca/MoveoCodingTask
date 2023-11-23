@@ -35,8 +35,8 @@ The student, selecting the "Async Case," will enter the code block page and find
 
 1. Clone the repository:
    ```bash
-  git clone https://github.com/lielca/MoveoCodingTask.git
-  cd MoveoCodingTask
+    git clone https://github.com/lielca/MoveoCodingTask.git
+    cd MoveoCodingTask
 2. Install dependencies for both the server and client:
    cd server
 npm install
