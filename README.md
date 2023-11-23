@@ -21,7 +21,7 @@ In this use case, both the mentor and the student will explore an example code b
 - Code:
 const fetchData = () => {
   console.log("Fetching data..."); }
-- solution:
+- Solution:
 const fetchData = async () => {
   console.log("Fetching data..."); }
   
@@ -30,3 +30,23 @@ The mentor, having chosen the "Async Case," will enter the code block page and s
 
 ### Student's View
 The student, selecting the "Async Case," will enter the code block page and find a textarea pre-populated with the provided solution. The student has the ability to modify the code in real-time, and any changes will be immediately visible to both the student and the mentor, fostering an interactive learning experience.
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone [<repository-url>](https://github.com/lielca/MoveoCodingTask)https://github.com/lielca/MoveoCodingTask
+   cd <repository-directory>
+
+2. Install dependencies for both the server and client:
+   cd server
+npm install
+cd ../client
+npm install
+3. Start the development server for both the server and client:
+# In the server directory
+npm start
+
+# In the client directory
+npm start
+4. Open your browser and visit http://localhost:3000 to access the application.
