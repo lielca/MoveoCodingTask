@@ -19,13 +19,9 @@ In this use case, both the mentor and the student will explore an example code b
 ### Code Block Details
 - Title: Async Case
 - Code:
-javascript
-Copy code
 const fetchData = () => {
   console.log("Fetching data..."); }
 - solution:
-javascript
-Copy code
 const fetchData = async () => {
   console.log("Fetching data..."); }
   
