@@ -35,18 +35,16 @@ The student, selecting the "Async Case," will enter the code block page and find
 
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/lielca/MoveoCodingTask)https://github.com/lielca/MoveoCodingTask
-   cd <repository-directory>
-
+  #Clone the repository
+  git clone https://github.com/lielca/MoveoCodingTask.git
+  #Change into the cloned directory
+  cd MoveoCodingTask
 2. Install dependencies for both the server and client:
    cd server
 npm install
 cd ../client
 npm install
 3. Start the development server for both the server and client:
-# In the server directory
-npm start
-
-# In the client directory
-npm start
+In the server directory: npm start
+In the client directory: npm start
 4. Open your browser and visit http://localhost:3000 to access the application.
