@@ -1,9 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { io } from "socket.io-client";
 import CodeBlockPage from './CodeBlockPage'; // Import the new component
 
-
-const socket = io.connect('http://localhost:3001');
 function App() {
 
   const [codeBlocks, setCodeBlocks]= useState([]);

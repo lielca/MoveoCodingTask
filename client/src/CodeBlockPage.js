@@ -36,7 +36,7 @@ const CodeBlockPage = ({ codeBlock }) => {
             socket.emit('leave_room', codeBlock.id);
         };
 
-    }, [socket, codeBlock.id] );
+    }, [codeBlock.id, codeBlock.code] );
 
     const handleCodeChange = (newCode) => {
         let room = codeBlock.id;
