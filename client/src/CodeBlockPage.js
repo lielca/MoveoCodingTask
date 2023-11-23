@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierForestLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-const socket = io.connect('http://localhost:3001');
+const socket = io.connect('https://moveocodingtask.onrender.com');
 
 const CodeBlockPage = ({ codeBlock }) => {
 
