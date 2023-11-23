@@ -5,7 +5,6 @@ Welcome to the Mentor-Student Coding Collaboration application! This web applica
 The application is deployed using the following platforms:
 
 - Server: Render
-  - [Link to Server Deployment](<your-render-server-url>)
 - Client: Netlify
   - [Link to Client Deployment](https://moveotasklielcaspi.netlify.app/)
 
