@@ -22,10 +22,14 @@ In this use case, both the mentor and the student will explore an example code b
 - Code:
 javascript
 Copy code
+const fetchData = () => {
+  console.log("Fetching data..."); }
+- solution:
+javascript
+Copy code
 const fetchData = async () => {
-  console.log("Fetching data...");
-
-}
+  console.log("Fetching data..."); }
+  
 ### Mentor's View
 The mentor, having chosen the "Async Case," will enter the code block page and see the provided code in read-only mode. Syntax highlighting will be applied for a better understanding.
 
