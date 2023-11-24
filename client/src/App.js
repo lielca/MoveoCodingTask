@@ -10,8 +10,7 @@ function App() {
     //whenever the website is uploading we fetch the codeblocks data from the server
     const fetchData = async () => {
         try {
-          //const response = await fetch("https://moveocodingtask.onrender.com/api");
-          const response = await fetch("http://localhost:3001/api");
+          const response = await fetch("https://moveocodingtask.onrender.com/api");
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
