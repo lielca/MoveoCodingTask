@@ -7,10 +7,11 @@ function App() {
   const [selectedCodeBlock, setSelectedCodeBlock] = useState(null); 
 
   useEffect(() => {
+    //whenever the website is uploading we fetch the codeblocks data from the server
     const fetchData = async () => {
         try {
-         // const response = await fetch("http://localhost:3001/api");
-          const response = await fetch("https://moveocodingtask.onrender.com/api");
+          //const response = await fetch("https://moveocodingtask.onrender.com/api");
+          const response = await fetch("http://localhost:3001/api");
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
@@ -26,6 +27,7 @@ function App() {
 
 
   const handleCodeBlockClick = (cb)=>{
+    //when clicking on a code block it's content appears on the screen
     setSelectedCodeBlock(cb);
   };
 

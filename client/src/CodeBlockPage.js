@@ -3,7 +3,8 @@ import { io } from 'socket.io-client';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierForestLight } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
-const socket = io.connect('https://moveocodingtask.onrender.com');
+const socket = io.connect('http://localhost:3001');
+//const socket = io.connect('https://moveocodingtask.onrender.com');
 
 const CodeBlockPage = ({ codeBlock }) => {
 
@@ -13,6 +14,7 @@ const CodeBlockPage = ({ codeBlock }) => {
 
 
     useEffect(()=>{
+        //when a change occur in the code block 
         setEditedCode(codeBlock.code);
 
         socket.emit('join_room', codeBlock.id);
@@ -27,6 +29,7 @@ const CodeBlockPage = ({ codeBlock }) => {
         });
 
         socket.on('code_update', (data) =>{ 
+          //checking if im in the same code block
             if (data.room === codeBlock.id)
             {          
                 setEditedCode(data.newCode)};
@@ -40,6 +43,7 @@ const CodeBlockPage = ({ codeBlock }) => {
 
     const handleCodeChange = (newCode) => {
         let room = codeBlock.id;
+        //sending newcode to broadcast to the mentor if he is on the same code block
         socket.emit('code_update', {newCode, room})
         setEditedCode(newCode);
         if (newCode===codeBlock.solution){

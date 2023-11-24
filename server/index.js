@@ -9,19 +9,17 @@ app.use(cors());
 const server = http.createServer(app)
 const io= new Server (server, {
     cors:{
-        //origin: "http://localhost:3000",
         methods: ["GET", "POST"],
     },
 });
-
 const socketRoles = {};
 
 io.on("connection", (socket) =>{
 
     socket.on("join_room", (room)=>{
+        //room equals to a code block
         socket.join(room);
 
-        console.log(socketRoles)
         // Check if there's already a mentor assigned
         if (Object.keys(socketRoles).length === 0) {
             socketRoles[socket.id] = "mentor";
